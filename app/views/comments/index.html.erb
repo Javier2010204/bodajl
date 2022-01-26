@@ -1,31 +1,25 @@
-<p id="notice"><%= notice %></p>
+<div id="Principal">
+  <div id="card-comentarios"class="animate__animated animate__backInDown animate__delay-1s">
+    <div id="div-comentarios">
+      <i class=" margin-top fas fa-comments letra-blanca tamano-85 margin-bottom margin-top"></i>
+      <p class=" tamano-20 letra-blanca margin-0 paddig letra-cursiva mensaje-comentarios">Una Boda se vive tres veces, </p>
+      <p class="tamano-20 letra-blanca margin-0 paddig letra-cursiva mensaje-comentarios">Al Soñarla, al Celebrarla, al Recordarla</p>
+      <p class="tamano-20 letra-blanca margin-0 paddig letra-cursiva mensaje-comentarios"> Dejanos tus Deseos</p>
 
-<h1>Comments</h1>
+      <section class="section">
+        <%= form_with(model: @comment, remote: true) do |form| %>
+          <%= form.text_field :name, id:'nombres', placeholder: 'Tu nombre aquí', class:"casillas"%>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Message</th>
-      <th>User</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+            <div class="field">
+              <%= form.text_area :message, class:'casillas', id:"comentarios", placeholder:"Deja tu mensaje aquí", rows:5%>
+            </div>
 
-  <tbody>
-    <% @comments.each do |comment| %>
-      <tr>
-        <td><%= comment.name %></td>
-        <td><%= comment.message %></td>
-        <td><%= comment.user_id %></td>
-        <td><%= link_to 'Show', comment %></td>
-        <td><%= link_to 'Edit', edit_comment_path(comment) %></td>
-        <td><%= link_to 'Destroy', comment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+            <div class="actions">
+              <%= form.submit 'Enviar', class:'boton letra-molde tamano17' %>
+            </div>
+        <% end %>
 
-<br>
-
-<%= link_to 'New Comment', new_comment_path %>
+      </section>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,486 @@
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://cdn03.lolaflora.com/bonnygift/lf159-1/XL/lf159-1-8d82b90086b918e-a28b67d3.jpg);
+    background-size: cover;
+}
+
+
+//General Settings
+
+.letra-cursiva{
+    font-family: 'Great Vibes', cursive;
+}
+
+.letra-molde{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.borde{
+    border: white;
+    border-style: solid;
+    padding: 5px;
+}
+
+.tamano-chiquito{
+    font-size: 12px;
+}
+
+.tamano17{
+    font-size: 17px;
+}
+
+.tamano-42{
+    font-size: 42px;
+}
+
+.tamano-20{
+    font-size: 25px;
+}
+
+.tamano-65{
+    font-size: 65px;
+}
+
+.tamano-85{
+    font-size: 85px;
+}
+
+.tamano-grande{
+    font-size: 48px;
+}
+
+.letra-pequena{
+    font-size: 25px;
+}
+
+
+.txt-non{
+    text-decoration: none;
+}
+
+.color-blanco{
+    color: rgb(255, 254, 254);
+}
+
+.letra-blanca{
+    color: white;
+}
+
+
+.margin-bottom{
+    margin-bottom: 25px;
+}
+
+.margin-top{
+    margin-top: 25px;
+}
+
+.margin-left-45{
+    margin-left: 45%;
+}
+
+.margin-0{
+    margin: 0in;
+}
+
+.margin-bottom-0{
+    margin-bottom: 0in;
+}
+
+
+// Portada
+
+
+#principal{
+    height: 715px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 90px;
+}
+
+.boton-portada{
+    padding: 25px;
+}
+
+#div-bienvenida{
+    height: 250px;
+    background-color: rgba(179, 179, 179, 0.774);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: -8px;
+}
+
+@media screen and (max-width: 500px){
+    #principal{
+        font-size: 45px;
+    }
+    #div-bienvenida{
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .letra-pequena{
+        font-size: 16px;
+    }
+}
+
+
+
+// Comentarios y login
+
+
+#Principal{
+    height:713px;
+    width:100%;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#card-comentarios{
+    height: 650px;
+    width: 1000px;
+    position: relative;
+    background-image: linear-gradient(#45737b, #23393d);
+    margin-top: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-color: white;
+}
+
+#div-comentarios{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mensaje-comentarios{
+    font-size: 36px;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.casillas{
+    background-color: #ffffff;
+    padding: 10px;
+    margin-top: 45px;
+    size: 50px;
+    width: 550px;
+}
+
+.actions{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.boton{
+    background-color:#eb889c ;
+    padding: 10px;
+    margin-top: 45px;
+    border: none;
+    border-color: none;
+    color: white;
+    width: 200px;
+    text-align: center;
+}
+
+.boton:hover{
+    background-color:#ecb2be ;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 500px) {
+    #card-comentarios{
+        max-height: 100vh;
+        width: 100%;
+        position: absolute;
+        padding: 25px;
+        
+    }
+
+    #div-comentarios{
+        padding: 25px;
+        text-align: center;
+    }
+
+    .mensaje-comentarios{
+        font-size: 32px;
+    }
+
+    .field{
+        max-width: 100%;
+    }
+
+    .casillas{
+        padding: 10px;
+        margin-top: 45px;
+        size: 50px;
+        width: 100%;
+    }
+
+    #texto-login{
+        font-size: 16px !important;
+    }
+}
+
+
+
+
+
+//Regalos
+
+
+#Principal{
+    height:713px;
+    width:100%;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#card-regalo{
+    height: 650px;
+    width: 1000px;
+    position: relative;
+    background-image: linear-gradient(#45737b, #23393d);
+    margin-top: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-color: white;
+}
+
+#div-regalo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 500px){
+
+    #Principal{
+        height: 100vh;
+    }
+
+    #card-regalo{
+        height: 100vh;
+        width: 100%;
+        max-height: 100vh;
+        max-width: 95%;
+        padding: 30px;
+        text-align: center;
+        font-size: 36px;
+    }
+
+    #div-regalo p{
+        font-size: 25px;
+    }
+
+}
+
+
+
+
+
+
+
+//INDEX
+
+.linea-abajo-texto{
+    text-decoration: white;
+}
+
+.display-flex{
+    display: flex;
+}
+
+.centrado{
+    justify-content: center;
+}
+
+#color-blanco{
+    background: rgba(255, 255, 255, 0.911);
+}
+
+.margen-blanco{
+    margin: 10px;
+}
+
+.paddig{
+    padding: 4px;
+}
+
+.margin-bottom{
+    margin-bottom: 25px;
+}
+.margin-top{
+    margin-top: 15px;
+}
+
+#Principal{
+    height:860px;
+    width:100%;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#card{
+    height: 100vh;
+    width: 1000px;
+    background-color: rgba(255, 255, 255, 0.945);
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+#Bienvenida{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: lighter;
+    font-size: 65px;
+}
+
+.pulsa{
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.contenedor-imagen{
+    background-image: url("~J&L.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    background-color: #45737b;
+    border-radius: 75px;
+    margin-top: 15px;
+}
+
+.boton-zoom{
+    margin-top: 10px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#eb889c;
+    color: rgb(255, 255, 255);
+    font-size:20px;
+    font-weight: bolder;
+    padding:10px 50px;
+    border: solid transparent;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#comentario-regalo{
+    background-image: linear-gradient(#45737b, #23393d);
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+}
+
+#comentario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.linea{
+    width: 2px;
+    height: 300px;
+    background-color: white;
+}
+
+#regalo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 500px){
+    #card{
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    #Bienvenida p{
+        text-align: center;
+    }
+
+    #mensaje-bienvenida{
+        font-size: 42px;
+    }
+
+    #boton-zoom{
+        font-size: 24px;
+    }
+
+    #comentario-regalo{
+        flex-direction: column;
+        padding: 10px 15px;
+    }
+
+    .linea{
+        visibility: hidden;
+    }
+}
+
+
+//footer
+
+
+#JyF{
+    height: 25px;
+    width: 100%;
+    background-color: #23393d ;
+    border-bottom: 1px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    bottom: 1px;
+}
+
+@media screen and (max-width: 500px){
+
+    #JyF{
+        visibility: hidden;
+    }
+}

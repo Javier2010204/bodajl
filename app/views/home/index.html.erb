@@ -1,4 +1,29 @@
-<h1>Hola mundo</h1>
+<div id="Principal" >
+    <div id="card"class="animate__animated animate__backInDown animate__delay-1s">
+        <div id="Bienvenida">
+            <p class="margin-top margin-bottom tamano-65 letra-cursiva" id="mensaje-bienvenida">Bienvenidos a la boda de Jacqueline & Luis</p>
+            <div class="contenedor-imagen img  "></div>
+            <p class="pulsa letra-molde tamano17" id="boton-zoom">Pulsa para unirte a la Santa Eucaristía</p>
+            <a href="x" class="boton-zoom letra-molde"><b>Zoom</b></a>
+        </div>
 
-<%= link_to 'Regalos', regalos_path %>
-<%= link_to 'Portada', portada_path %>
+        <div id="comentario-regalo">
+            <div id="comentario">
+                <%= link_to 'Comentarios para el recuerdo', comments_path, class:"letra-blanca tamano-20" %>
+                <%= link_to comments_path do %>
+                    <i class="fas fa-comments letra-blanca tamano-65 margin-bottom margin-top"></i>
+                <% end %>
+            </div>
+            <div class="linea"></div>
+            <div id="regalo">
+                <%= link_to 'Obsequios', regalos_path, class:"letra-blanca tamano-20" %>
+                <%= link_to regalos_path do %>
+                    <i class="fas fa-gift tamano-65 letra-blanca"></i>
+                <% end %>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<%= link_to 'Portada', root_path %>
