@@ -3,6 +3,5 @@
         <p class="color-blanco margin-bottom margin-top letra-molde letra-pequena">Bienvenidos a la boda de Jacqueline & Luis</p>
         <%= link_to 'Pulsa aquí', index_path, class: 'color-blanco letra-pequena borde txt-non letra-cursiva boton-portada' %>
     </div>
+    <%= link_to 'Cerrar Sesión', destroy_user_session_path, method: :delete, class:'cerrar-sesion' %>
 </div>
-
-<%= link_to 'Cerrar Sesión', destroy_user_session_path, method: :delete %>

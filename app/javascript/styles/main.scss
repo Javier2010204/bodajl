@@ -464,6 +464,12 @@ body{
 
 //footer
 
+.cerrar-sesion{
+    padding: 10px;
+    font-size: 24px;
+    color: #f1c9d1;
+    margin-top: 1.4em;
+}
 
 #JyF{
     height: 25px;
@@ -482,5 +488,11 @@ body{
 
     #JyF{
         visibility: hidden;
+    }
+
+    .cerrar-sesion{
+
+        font-size: 12px;
+
     }
 }
